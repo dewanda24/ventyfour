@@ -1,4 +1,3 @@
-// Produk list
 import { products } from "@/data/products";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
 
 const getKategori = (slug: string) => {
   if (slug.includes("form")) return "Formulir";
-  if (slug.includes("site")) return "Website";
+  if (slug.includes("site") || slug.includes("page")) return "Website";
   if (slug.includes("ads")) return "Iklan";
   return "Branding";
 };
@@ -20,8 +19,7 @@ export default function ProdukPage() {
   return (
     <section className="py-20 px-4 max-w-6xl mx-auto">
       {/* Header */}
-      <div className="text-center mb-12">
-        <p className="text-sm text-neutral-500 mb-2">Beranda / Produk</p>
+      <div className="text-center mb-12 mt-4">
         <h1 className="text-3xl md:text-4xl font-bold text-blue-600 mb-3">
           Semua Produk Ventyfour
         </h1>
@@ -68,8 +66,10 @@ export default function ProdukPage() {
             <p className="text-xs text-neutral-500 mb-4">
               Mulai {p.pricing?.basic}
             </p>
+
+            {/* Link ke Halaman Statis */}
             <Link
-              href={`/produk/${p.slug}`}
+              href={`/produk/detail/${p.slug}`}
               className="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-full hover:bg-blue-700 transition"
             >
               Lihat Detail

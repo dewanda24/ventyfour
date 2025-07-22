@@ -1,65 +1,84 @@
-// data/products.ts
-
 export const products = [
   {
     slug: "ventykit",
-    name: "VentyKit",
-    description:
-      "Logo, warna, QR & template instan untuk branding profesional.",
-    image: "produk/ventykit.svg",
-    features: [
-      "Logo & warna profesional",
-      "QR code siap pakai",
-      "Template konten & kartu nama",
-    ],
+    name: "Ventykit",
+    description: "Toolkit lengkap untuk solusi digital Anda.",
+    image: "/produk/ventykit.svg", // ← path dari public/
     pricing: {
-      basic: "Rp150.000",
-      pro: "Rp350.000",
+      basic: "Rp149rb",
+      pro: "Rp399rb",
     },
-  },
-  {
-    slug: "ventysite",
-    name: "VentySite",
-    description: "Landing page online yang simpel dan langsung bisa dibagikan.",
-    image: "produk/ventysite.svg",
+    isPromo: true,
     features: [
-      "1 halaman landing",
-      "Responsif mobile",
-      "Link & CTA siap pakai",
+      "UI/UX Profesional",
+      "Siap pakai langsung",
+      "Dukungan update gratis",
+      "Optimasi kecepatan website",
     ],
-    pricing: {
-      basic: "Rp200.000",
-      pro: "Rp450.000",
-    },
+    specs: [
+      { label: "Platform", value: "Next.js + Tailwind CSS" },
+      { label: "Responsive", value: "Ya (mobile & desktop)" },
+      { label: "Support", value: "Live chat & email" },
+    ],
   },
   {
     slug: "ventyads",
-    name: "VentyAds",
-    description: "Konten iklan siap posting untuk promosi cepat & menarik.",
-    image: "produk/ventyads.svg",
-    features: [
-      "Desain promosi siap posting",
-      "Teks iklan pendek & menarik",
-      "Format feed dan story",
-    ],
+    name: "Ventyads",
+    description: "Platform manajemen iklan digital yang canggih.",
+    image: "/produk/ventyads.svg",
     pricing: {
-      basic: "Rp100.000",
-      pro: "Rp250.000",
+      basic: "Rp249rb",
+      pro: "Rp349rb",
     },
+    isPromo: false,
+    features: [
+      "Integrasi Meta & Google Ads",
+      "Dashboard performa realtime",
+      "Fitur A/B testing iklan",
+    ],
+    specs: [
+      { label: "Bahasa", value: "Bahasa Indonesia & Inggris" },
+      { label: "Analytics", value: "Realtime & Akurat" },
+    ],
   },
   {
     slug: "ventyform",
-    name: "VentyForm",
-    description: "Formulir online untuk order, survei, atau pendaftaran.",
-    image: "produk/ventyform.svg",
-    features: [
-      "Formulir online siap pakai",
-      "Link langsung share ke WA",
-      "Data masuk langsung ke email/drive",
-    ],
+    name: "Ventyform",
+    description: "Form builder cerdas dan fleksibel.",
+    image: "/produk/ventyform.svg",
     pricing: {
-      basic: "Rp100.000",
-      pro: "Rp200.000",
+      basic: "Rp79rb",
+      pro: "Rp149rb",
     },
+    isPromo: false,
+    features: [
+      "Drag & drop form builder",
+      "Integrasi WhatsApp",
+      "Webhook & Zapier support",
+    ],
+    specs: [
+      { label: "Form Limit", value: "Tak terbatas" },
+      { label: "Export Data", value: "CSV & JSON" },
+    ],
+  },
+  {
+    slug: "ventypage",
+    name: "Ventypage",
+    description: "Landing page generator instan tanpa coding.",
+    image: "/produk/ventypage.svg",
+    pricing: {
+      basic: "Rp199rb",
+      pro: "Rp249rb",
+    },
+    isPromo: false,
+    features: [
+      "Template siap pakai",
+      "SEO-friendly",
+      "Form & CTA terintegrasi",
+    ],
+    specs: [
+      { label: "Builder", value: "Drag & drop" },
+      { label: "SEO Tools", value: "Custom meta tag + sitemap" },
+    ],
   },
 ];
