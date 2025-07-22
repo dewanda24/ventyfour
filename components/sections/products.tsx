@@ -71,7 +71,7 @@ const Products = () => {
                 {desc}
               </p>
               <Link
-                href={`/produk/${slug}`}
+                href={`/produk/detail/${slug}`}
                 className="text-sm text-blue-600 hover:underline font-medium"
               >
                 Lihat Detail →
